@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atmanirbharrogar.company.work">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/atmlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ShowDetails"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".AccountType"
+            android:label="Category"/>
+        <activity
+            android:name=".OtpVerify"
+            android:label="OTP Verify"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ShowCreatedPost"
+            android:label="Previous Post"
+            android:parentActivityName=".WorkMain"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ServiceManForm"
+            android:label="Service Man Form"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CreatePost"
+            android:label="Create Post"
+            android:parentActivityName=".WorkMain"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Show_Available_worker_Profile" />
+        <activity android:name=".AvailableWorkers" />
+        <activity android:name=".GetLocation" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".HireEdit" />
+        <activity
+            android:name=".HireProfile"
+            android:parentActivityName=".HireMain"
+            android:theme="@style/AppTheme.NoActionBar.ProfileDerived" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".ViewLabour" />
+        <activity android:name=".ViewPainter" />
+        <activity android:name=".ViewPlumber" />
+        <activity android:name=".ViewCarpainter" />
+        <activity android:name=".ViewMason" />
+        <activity android:name=".ViewElectrician" />
+        <activity android:name=".ViewTutor" />
+        <activity android:name=".ViewGeneralSurgeon" />
+        <activity android:name=".ViewWebDeveloper" />
+        <activity android:name=".ViewAndroidDeveloper" />
+        <activity android:name=".WorkerEdit" />
+        <activity
+            android:name=".WorkerProfile"
+            android:label="Your Profile"
+            android:parentActivityName=".WorkMain"
+            android:theme="@style/AppTheme.NoActionBar.ProfileDerived" />
+        <activity android:name=".HireMain" />
+        <activity
+            android:name=".WorkMain"
+            android:theme="@style/AppTheme.NoActionBar.MainDerived" />
+        <activity android:name=".StudentMain" />
+        <activity android:name=".AccountType" />
+        <activity
+            android:name=".PhotoUpload"
+            android:label="Photo Upload"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Section" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Select language"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

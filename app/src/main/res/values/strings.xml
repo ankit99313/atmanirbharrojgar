@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Atmanirbharojgar2</string>
+    <string name="pleaseverify">Please Verify your number</string>
+
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>About Us</item>
+        <item>Switch Account</item>
+    </array>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="userId">userId</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="google_maps_key" />
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Atmanirbharojgar2</string>
+    <string name="pleaseverify">ृपया अपना नंबर सत्यापित करें</string>
+
+    <string name="noconnection">कृपया एक वाईफ़ाई नेटवर्क से कनेक्ट करें या मोबाइल डेटा को सक्षम करें</string>
+    <string name="navigation_drawer_open">नेविगेशन दराज खोलें</string>
+    <string name="navigation_drawer_close">नेविगेशन ड्रॉअर बंद करें</string>
+    <string name="userId">यूज़र आईडी</string>
+
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="title_activity_maps2">नक्शा</string>
+</resources>
