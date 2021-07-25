@@ -1,11 +1,9 @@
 package com.atmanirbharrogar.company.work;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,14 +13,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthProvider;
-
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity  {
     ProgressDialog pd;
@@ -42,8 +38,9 @@ public class MainActivity extends AppCompatActivity  {
 
     TextInputEditText editTextNumber;
     TextInputEditText editTextOtp;
-    CardView englishh, Hindi;
-    //MaterialButton button_send,button_verify,button_resend;
+    MaterialButton button_continue;
+
+
 
 
     //Setting Boolean to say whether or not we are in progress.
@@ -63,10 +60,10 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        loadLocale();
+       // loadLocale();
         setContentView(R.layout.activity_main);
 
-        englishh=(CardView)findViewById(R.id.english);
+        /* englishh=(CardView)findViewById(R.id.english);
         Hindi=(CardView)findViewById(R.id.hindi);
 
         Hindi.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity  {
                 startActivity(intent);
                 finish();
             }
-        });
+        });*/
      //   listView=(ListView)findViewById(R.id.listview);
 
 
@@ -101,6 +98,9 @@ public class MainActivity extends AppCompatActivity  {
         setSupportActionBar(toolbar);*/
 
         new checkInternetConnection(this).checkConnection();
+
+
+
 
 
 
@@ -145,11 +145,34 @@ public class MainActivity extends AppCompatActivity  {
         mAuth = FirebaseAuth.getInstance();
 
 
+        button_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String mobile = editTextNumber.getText().toString().trim();
+
+                if(mobile.isEmpty() || mobile.length() < 10){
+                    editTextNumber.setError("Enter a valid mobile");
+                    editTextNumber.requestFocus();
+                    return;
+                }
+
+                Intent intent = new Intent(MainActivity.this, OtpVerify.class);
+                intent.putExtra("mobile", mobile);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
     }
 
 
 
-    private void setLocale(String lang) {
+
+
+
+   /* private void setLocale(String lang) {
         Locale locale=new Locale(lang);
         Locale.setDefault(locale);
         Configuration config= new Configuration();
@@ -165,7 +188,7 @@ public class MainActivity extends AppCompatActivity  {
         SharedPreferences prefs= getSharedPreferences("Settings", Activity.MODE_PRIVATE);
         String language = prefs.getString("My Lang", "");
         setLocale(language);
-    }
+    } */
 
     // Creating onStart method.
     @Override

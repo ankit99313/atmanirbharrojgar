@@ -4,134 +4,130 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:windowSoftInputMode="stateVisible|adjustPan"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
-
-    <androidx.appcompat.widget.Toolbar
-        android:visibility="gone"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        app:titleTextColor="@color/black"
-        android:elevation="4dp"
-        android:background="@color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
- <!--   <ListView
-
-        android:visibility="gone"
-        android:minHeight="90dp"
-        android:divider="@color/darkgray"
-        android:dividerHeight="1dp"
-        android:layout_below="@+id/toolbar"
-        android:id="@+id/listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+    android:transitionGroup="true"
+    android:layout_gravity="center"
+    tools:context=".LoginActivity">
 
 
-
-
-    <LinearLayout
-       android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="8dp"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="30dp">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="55dp"
-           android:background="@drawable/langaugetitle"
-            android:paddingLeft="10dp"
-            android:paddingTop="5dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:shadowRadius="@integer/fullBackgroundAlpha"
-            android:text="Language"
-            android:textColor="@color/white"
-            android:textSize="23sp"
-            android:textStyle="bold"></TextView>
-
-
-        <TextView
-            android:id="@+id/button_resend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="15dp"
-            android:text="RESEND OTP IN33"
-            android:visibility="gone">
-
-        </TextView>
-
-
-        <TextView
-            android:gravity="center_horizontal"
-            android:id="@+id/hindi"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/languagetypebackground"
-
-            android:paddingTop="7dp"
-
-
-            android:paddingBottom="7dp"
-            android:text="Hindi"
-            android:textSize="20sp">
-
-        </TextView>
-
-        <TextView
-            android:gravity="center_horizontal"
-            android:id="@+id/english"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/languagetypebackground"
-            android:paddingTop="7dp"
-            android:paddingBottom="7dp"
-            android:text="English"
-            android:textSize="20sp">
-
-        </TextView>
-
-
-
-
-    </LinearLayout>
-
-
-
-
-
-    <com.google.android.material.button.MaterialButton
-android:visibility="gone"
-        android:id="@+id/button_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="18dp"
-        android:text="Continue"
-        android:layout_alignParentBottom="true"
-      android:layout_marginTop="150dp"
-
-
-        />
--->
 
 
 
     <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:src="@drawable/atmlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"></ImageView>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearverify"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pleaseverify"
+                android:textSize="18sp">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextNumberLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                android:autofillHints="Enter your number"
+                android:hint="Enter your number">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/button_resend"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESEND OTP IN33">
+
+            </TextView>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:backgroundTint="	#008000"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:id="@+id/button_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Send Otp"
+                android:layout_marginRight="12dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -147,13 +143,7 @@ android:visibility="gone"
         android:columnOrderPreserved="false"
         android:rowCount="3">
 
-        <!--row 1
 
-        android:layout_weight="8"
-          android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-         -->
-        <!--column 1 -->
         <androidx.cardview.widget.CardView
             android:id="@+id/hindi"
             android:layout_width="130dp"
@@ -382,6 +372,6 @@ android:visibility="gone"
 
     </GridLayout>
 
-    </RelativeLayout>
+    </RelativeLayout>-->
 
 </LinearLayout>
