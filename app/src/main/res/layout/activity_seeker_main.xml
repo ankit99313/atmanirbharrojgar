@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:background="@drawable/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSharedElementsUseOverlay="false">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/duo_view_footer"
+        app:header="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="?attr/listPreferredItemPaddingRight">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                tools:ignore="PrivateResource">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cover"
+                        android:paddingTop="100dp"
+                        android:paddingBottom="100dp"
+                        android:scaleType="fitXY">
+
+                        <ImageView
+                            android:id="@+id/Img_profile_Seeker"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_baseline_account_circle_24" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/Seeker_name"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rl"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Name"
+                        android:textSize="26sp" />
+
+                    <View
+                        android:id="@+id/v"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/Seeker_name"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/exp12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Experience"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/exp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingTop="8dp"
+                                android:text="0"
+                                android:textColor="@color/startblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Category"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/Seeker_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingTop="8dp"
+                                android:textColor="@color/startblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.MaterialComponents.Caption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="New Work"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/new_work"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingTop="8dp"
+                                android:text="0"
+                                android:textColor="@color/startblue"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/exp12"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/v2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Seeker_adhar_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableStart="@drawable/ic_aadhaar"
+                            android:drawablePadding="16dp"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="XXX-XXXX-XXXX"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/Seeker_mob_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableStart="@drawable/ic_baseline_phone_24"
+                            android:drawablePadding="16dp"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="XXX-XXXX-XXXX"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textviewcomments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableStart="@drawable/ic_forum_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="No Comments"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

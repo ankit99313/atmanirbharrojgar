@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSharedElementsUseOverlay="false">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/duo_view_footer"
+        app:header="@layout/header"
+        app:itemIconTint="#000000"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_content">
+
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </androidx.appcompat.widget.Toolbar>
+       <!-- android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+
+
+
+     <!--   <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="CATEGORIES"
+            android:textSize="25sp"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            />-->
+
+
+
+
+
+        <ScrollView
+            android:layout_gravity="center"
+            android:layout_below="@+id/textGrid"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+
+                    >
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/android_developer"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/android" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Android Developer"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/web_developer"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/website" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Web Developer"
+                                android:textFontWeight="@android:integer/config_longAnimTime"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/generalsurgeon"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/generalsurgeon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="General Surgeon"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/tutor"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/tutor" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tutor"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/electrician"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/electrician" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Electrician"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/bricklayer"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/bricklayer" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mason"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/plumber"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/plumber" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Plumber"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/labour"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/labour" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Labourer"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/carpainter"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/carpainter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Carpenter"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardBackgroundColor="#0084FF"
+                        android:id="@+id/painter"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:clickable="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/painter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Painter"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp"
+                                android:textFontWeight="@android:integer/config_longAnimTime" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

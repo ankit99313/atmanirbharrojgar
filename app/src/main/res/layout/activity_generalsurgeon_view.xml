@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralsurgeonView">
+
+
+
+    <LinearLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input_main_design"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/black"
+        >
+
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/ic_main_search_black_24dp"
+            />
+
+        <EditText
+            android:id="@+id/search_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Search Your City Name"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:background="@null"
+            android:layout_marginStart="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_location"
+        android:layout_width="match_parent"
+        android:text="Click For Current location "
+        android:layout_below="@+id/r5"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/text_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/grad"
+        android:layout_below="@+id/bt_location"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="#000000"
+            android:id="@+id/text_view1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:id="@+id/text_view2" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_location">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atmanirbharrogar.company.work">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".phoneverify"></activity>
+        <activity android:name=".SignUpNumberTaken" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".GeneralsurgeonView" />
+        <activity android:name=".TutorView" />
+        <activity android:name=".WebdeveloperView" />
+        <activity android:name=".AndroiddeveloperView" />
+        <activity android:name=".PainterView" />
+        <activity android:name=".CarpenterView" />
+        <activity android:name=".PlumberView" />
+        <activity android:name=".MasonView" />
+        <activity android:name=".ElectricianView" />
+        <activity android:name=".LabourView" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up"
+
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RecruiterMain"
+            android:theme="@style/AppTheme.NoActionBar.MainDerived" />
+        <activity
+            android:name=".RecruiterProfile"
+            android:label="Your Profile"
+            android:parentActivityName=".RecruiterMain"
+            android:theme="@style/AppTheme.NoActionBar.ProfileDerived" />
+        <activity
+            android:name=".SeekerProfile"
+            android:label="Your Profile"
+            android:parentActivityName=".SeekerMain"
+            android:theme="@style/AppTheme.NoActionBar.ProfileDerived" />
+        <activity
+            android:name=".SeekerMain"
+            android:theme="@style/AppTheme.NoActionBar.MainDerived" />
+        <activity
+            android:name=".PhotoActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditRecruiter"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".EditSeeker"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".PhotoUpload"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".GetLocation" />
+        <activity
+            android:name=".AboutUs"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".AvailableWorkers" />
+        <activity
+            android:name=".Show_Available_worker_Profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ShowComments"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ForgotPasswordModule"
+            android:label="Forgot Password"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

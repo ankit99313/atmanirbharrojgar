@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: nl.psdcompany:duo-navigation-drawer:2.0.8@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a353e0dc81de2545d4855aafddc893d5/jetified-duo-navigation-drawer-2.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e058e10de832d7e59e5f0870453669d/jetified-duo-navigation-drawer-2.0.8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a353e0dc81de2545d4855aafddc893d5/jetified-duo-navigation-drawer-2.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a353e0dc81de2545d4855aafddc893d5/jetified-duo-navigation-drawer-2.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a353e0dc81de2545d4855aafddc893d5/jetified-duo-navigation-drawer-2.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e058e10de832d7e59e5f0870453669d/jetified-duo-navigation-drawer-2.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e058e10de832d7e59e5f0870453669d/jetified-duo-navigation-drawer-2.0.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e058e10de832d7e59e5f0870453669d/jetified-duo-navigation-drawer-2.0.8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.psdcompany/duo-navigation-drawer/2.0.8/de953217868b968d2787a15c922af050a5dba5a7/duo-navigation-drawer-2.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/nl.psdcompany/duo-navigation-drawer/2.0.8/e16dfe74d6405141540c466c7caf4224e1ec90a8/duo-navigation-drawer-2.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

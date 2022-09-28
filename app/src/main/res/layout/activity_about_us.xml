@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".AboutUs">
+
+    <ImageView
+        android:id="@+id/imgView_icon_signup"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="4dp"
+      android:layout_centerHorizontal="true"
+        android:src="@drawable/worker"
+        />
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_below="@+id/imgView_icon_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#009900"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+        android:text="This is a private organisation helping those people who want to earn money by doing work for any organisation on the daily basis earning. We also help those people who want to open new company and need manpower (Need For workers, Freelancers, Web Developer,Android Developer, etc.) to handle their organisation at very affordable cost. \n \n \n 1. To help those people who want to work.\n 2.To provide platform for self-employment.\n3. Improving employability in our region"
+        android:textSize="15dp"
+        />
+
+
+
+
+
+</RelativeLayout>

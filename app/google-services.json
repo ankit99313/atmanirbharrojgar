@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965203813821",
+    "firebase_url": "https://atmanirbhar-386b4.firebaseio.com",
+    "project_id": "atmanirbhar-386b4",
+    "storage_bucket": "atmanirbhar-386b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965203813821:android:67a4753f14814b51735ed4",
+        "android_client_info": {
+          "package_name": "com.atmanirbharrogar.company.work"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965203813821-snusbsn9bue2ja737gbug31q808qadcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJbPTlzUjrJlxaeLKfKYgLIHQwAsTmMf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965203813821-snusbsn9bue2ja737gbug31q808qadcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

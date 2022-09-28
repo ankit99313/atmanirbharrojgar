@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RecruiterProfile"
+    tools:showIn="@layout/activity_recruiter_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/name_recruiter"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="Recruiter Name" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Email"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mail_recruiter"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="Recruiter Email" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mobile Number"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/recruiter_mobile"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="Recruiter Text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Aadhaar"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/recruiter_aadhaar"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="Aadhaar Number" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Address"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/recruiter_address"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="Address" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="State"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/recruiter_state"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="State" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="City"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/recruiter_city"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            tools:text="City" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
